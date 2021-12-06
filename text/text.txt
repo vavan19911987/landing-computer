@@ -1,0 +1,19 @@
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0", //
+    "gulp-cli": "^2.3.0", //
+    "gulp-htmlmin": "^5.0.1", //
+    "gulp-imagemin": "^6.2.0", //
+    "gulp-rename": "^1.4.0", //
+    "gulp-sass": "^4.1.0" //
+
+
+
+      "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vavan19911987/PortFolioWin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vavan19911987/PortFolioWin/issues"
+  },
+  "homepage": "https://github.com/vavan19911987/PortFolioWin#readme",
+  "description": ""

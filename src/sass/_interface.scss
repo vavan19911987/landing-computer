@@ -1,0 +1,18 @@
+.container {
+    width: 1301px;
+    margin: 0 auto;
+    // overflow: hidden;
+    position: relative;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 150%;
+    @include reg;
+    color: $color-text;
+}
+.btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: $color-bg-btn-nav;
+}

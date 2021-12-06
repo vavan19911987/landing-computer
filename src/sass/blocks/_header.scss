@@ -1,0 +1,124 @@
+.header {
+    min-height: 100vh;
+    background: url(../../img/bg/main-bg.png) no-repeat;
+    position: relative;
+
+    &__logo {
+        margin-right: 200px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 80px 0 80px;
+    }
+    &__menu {
+        min-width: 745px;
+        &_items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    &__main {
+        min-width: 920px;
+        padding-top: 198px;
+
+        &_text {
+            @include bold;
+            font-size: 64px;
+            line-height: 140%;
+            color: $color-text;
+        }
+    }
+    &__counter {
+        display: flex;
+        padding-top: 50px;
+        padding-bottom: 218px;
+    }
+    &__namber {
+        padding: 20px 30px;
+        background: #121212;
+        text-align: center;
+        margin-right: 30px;
+        &_val {
+            font-size: 36px;
+            line-height: 140%;
+            @include bold;
+            min-width: 70px;
+
+        }
+        &_title {
+            opacity: 0.4;
+        }
+    }
+
+    &__footer {
+        background: #121212;
+        font-size: 16px;
+        line-height: 150%;
+        @include reg;
+        &_content {
+            padding-top: 43px;
+            padding-bottom: 43px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &_title {
+            margin-right: 81px;
+
+            &_items {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__subtitle {
+            opacity: 0.4;
+            padding-right: 30px;
+        }
+
+        &_btn {
+            background: $color-bg-btn;
+            margin-right: 81px;
+        }
+        &_ratings {
+            display: flex;
+            flex-direction: column;
+            transition: all 3s;
+            &_span {
+                width: 714px;
+                height: 6px;
+                background-color: $color-text;
+                position: relative;
+                overflow: hidden;
+            }
+            span {
+                width: 65%;
+                visibility: visible;
+                animation-name: rights;
+                display: block;
+                height: 100%;
+                background: $color-bg-btn;
+                border-radius: 4px;
+                animation: rights 5s infinite;
+            }
+        }
+        &_text {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 9px;
+        }
+    }
+}
+
+@keyframes rights {
+    0% {
+        width: 0%;
+    }
+    100% {
+        wudth: 50%;
+    }
+}
