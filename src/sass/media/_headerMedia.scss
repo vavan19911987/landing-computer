@@ -142,11 +142,13 @@
             margin-bottom: 10px;
         }
         &__main {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+}
             &_text {
                 font-size: 28px;
                 text-align: center;
-                color: $color-bg-btn;
-                display: table;
             }
         }
         &__footer {
