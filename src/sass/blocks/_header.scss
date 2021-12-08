@@ -1,8 +1,7 @@
 .header {
     min-height: 100vh;
-    background: url(../img/bg/main-bg.png) no-repeat;
+    background: url(../img/bg/main-bg.png) no-repeat 100%/cover;
     position: relative;
-
     &__logo {
         margin-right: 200px;
     }
@@ -22,7 +21,7 @@
         }
     }
     &__main {
-        min-width: 920px;
+        max-width: 920px;
         padding-top: 198px;
 
         &_text {
@@ -47,18 +46,22 @@
             line-height: 140%;
             @include bold;
             min-width: 70px;
+        }
+        &_text {
+            opacity: 0.4;
 
         }
         &_title {
             opacity: 0.4;
         }
     }
-
     &__footer {
         background: #121212;
         font-size: 16px;
         line-height: 150%;
         @include reg;
+        position: relative;
+    bottom: -23px;
         &_content {
             padding-top: 43px;
             padding-bottom: 43px;
@@ -110,15 +113,11 @@
             display: flex;
             justify-content: space-between;
             padding-bottom: 9px;
+            opacity: 0.4;
+
+
         }
     }
 }
 
-@keyframes rights {
-    0% {
-        width: 0%;
-    }
-    100% {
-        wudth: 50%;
-    }
-}
+

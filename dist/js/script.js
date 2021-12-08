@@ -1,6 +1,9 @@
 window.addEventListener('DOMContentLoaded', function () {
     "user strict";
-    const newYear = new Date('jan 1 2022 00:00:00');
+
+
+
+    const newYear = new Date('jan 20 2022 00:00:00');
 
     const daysVal = document.querySelector('.days .header__namber_val');
     const hoursVal = document.querySelector('.hours .header__namber_val');
@@ -47,7 +50,24 @@ window.addEventListener('DOMContentLoaded', function () {
     timeCount();
     setInterval(timeCount, 1000);
 
+    // ! работа с hamburger
 
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector('.menu');
+    const close = document.querySelector('.menu__close');
+    const bodys = document.querySelector('body');
+
+    hamburger.addEventListener('click', () => {
+        bodys.setAttribute("style", "overflow:hidden;");
+        menu.classList.add('active');
+
+    });
+    close.addEventListener('click', () => {
+        bodys.setAttribute("style", "overflow:none;");
+        menu.classList.remove('active');
+    });
+
+ 
     new WOW().init();
 
 });
