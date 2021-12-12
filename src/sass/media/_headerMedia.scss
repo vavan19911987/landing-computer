@@ -144,7 +144,7 @@
         &__main {
             display: flex;
             flex-direction: column;
-            margin-left: 20px;
+            margin: 0 auto;
             &_text {
                 font-size: 28px;
                 text-align: center;
@@ -162,6 +162,4 @@
         }
     }
 }
-// @media (max-width: 1200px) {
 
-// }
