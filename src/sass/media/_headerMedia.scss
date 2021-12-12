@@ -141,6 +141,11 @@
             margin-right: 10px;
             margin-bottom: 10px;
         }
+
+        &__namber:nth-child(4n) {
+            margin-right: 0px;
+
+        }
         &__main {
             display: flex;
             flex-direction: column;
@@ -159,6 +164,14 @@
                     width: 220px;
                 }
             }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .header {
+        &__namber:nth-child(3n) {
+            margin-right: 0px;
+
         }
     }
 }
