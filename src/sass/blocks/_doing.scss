@@ -1,8 +1,6 @@
 .doing {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../img/bg/bg.png);
-    background-repeat: round;
     position: relative;
     &__wrapper {
         display: flex;
@@ -18,15 +16,6 @@
         padding-top: 100px;
         max-width: 636px
     }
-    &__title {
-        font-size: 48px;
-        line-height: 140%;
-        padding-bottom: 45px;
-        @include bold;
-    }
-    &__subtitle {
-        font-size: 16px;
-        line-height: 160%;
-        @include reg;
-    }
+
+   
 }

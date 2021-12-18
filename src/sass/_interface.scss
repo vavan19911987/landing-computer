@@ -16,3 +16,36 @@
     border-radius: 50px;
     background: $color-bg-btn-nav;
 }
+
+.main {
+    background-image: url(../img/bg/bg.png);
+    background-repeat: round;
+    position: relative;
+}
+
+body {
+    color: $color-text;
+    position: relative;
+
+}
+
+.title {
+    font-size: 48px;
+    line-height: 140%;
+    padding-bottom: 45px;
+    @include bold;
+}
+.subtitle {
+    font-size: 16px;
+    line-height: 160%;
+    @include reg;
+}
+
+.alipce {
+    font-size: 15px; /* Масштаб элемента */
+    height: 7.5em; width: 7.5em;
+    background-image: linear-gradient(to right, #df5950, #451046);
+    -webkit-mask: 0em -3.75em / 100% 100% radial-gradient(circle at center bottom, #fff0 2.4375em, #ffff 2.5em 3.6875em, #fff0 3.75em);
+    mask: 0em -3.75em / 100% 100% radial-gradient(circle at center bottom, #fff0 2.4375em, #ffff 2.5em 3.6875em, #fff0 3.75em);
+    transform: rotate(45deg); 
+}
