@@ -1,0 +1,30 @@
+.profession {
+    padding-bottom: 200px;
+    &__title {
+        text-align: center;
+        display: block;
+        padding-bottom: 120px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        text-align: center;
+        width: 358px;
+
+        img {
+            padding-bottom: 60px;
+        }
+    }
+    &__text {
+        padding-bottom: 30px;
+    }
+
+    &__subtitle {
+        opacity: 0.8;
+    }
+}
