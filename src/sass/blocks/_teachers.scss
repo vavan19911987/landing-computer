@@ -1,0 +1,61 @@
+.teachers {
+    padding: 0 20px 120px 20px;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 56px;
+    }
+    &__title {
+        padding-bottom: 0;
+    }
+    &__alipce {
+        transform: rotate(0deg);
+        margin-right: 50px;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 140%;
+        @include reg;
+        padding: 40px 0 15px 0;
+    }
+    &__subtitle {
+        opacity: 0.3;
+        padding-bottom: 30px;
+    }
+
+    &__btn {
+        width: 143px;
+        color: $color-text;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__people {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        height: 190px;
+        width: calc(100%);
+        margin-top: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+}

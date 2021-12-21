@@ -1,0 +1,39 @@
+@media (max-width: 992px) {
+    .teachers {
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__alipce {
+            margin-right: 0px;
+        }
+    }
+
+}
+@media (max-width: 704px) {
+    .teachers {
+        &__title {
+            font-size: 30px;
+        }
+    }
+    
+}
+@media (max-width: 578px) {
+    .teachers {
+        &__wrapper {
+            justify-content: center;
+        }
+        &__title {
+            font-size: 25px;
+        }
+    }
+}
+// @media (max-width: 1200px) {
+    
+// }
+// @media (max-width: 1200px) {
+    
+// }
+// @media (max-width: 1200px) {
+    
+// }
