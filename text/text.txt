@@ -16,3 +16,6 @@
 @media (max-width: 1200px) {
     
 }
+
+
+cd e:/'my project'/landing-computer
