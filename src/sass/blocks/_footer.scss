@@ -1,5 +1,6 @@
 .footer {
     padding: 0 20px 0 20px;
+
     &__wrap {
         display: flex;
         flex-direction: column;
@@ -23,7 +24,7 @@
     &__input {
         cursor: pointer;
         height: 44px;
-        max-width: 400px;
+        width: 400px;
         padding-left: 39px;
         // background: #ffffff;
         opacity: 0.25;
@@ -49,6 +50,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         a {
             display: flex;
             justify-content: center;
@@ -60,10 +62,42 @@
             background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
         }
     }
-    &__text {
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__span {
+        margin-right: 20px;
+    }
+}
+
+.policy {
+    margin: 45px 45px 45px 45px;
+    padding-bottom: 40px;
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    h2 {
         font-size: 16px;
-        line-height: 160%;
-        padding: 15px 0 30px 0;
-        opacity: .3;
+        @include bold;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        color: rgb(250, 4, 4);
+    }
+    p {
+        font-size: 16px;
+        @include med;
+        line-height: 25px;
+
+    }
+    a {
+        color: $main-color;
+        text-decoration: underline;
+        @include bold;
     }
 }

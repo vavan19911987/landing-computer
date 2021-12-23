@@ -67,7 +67,6 @@ window.addEventListener('DOMContentLoaded', function () {
         menu.classList.remove('active');
     });
 
- 
     new WOW().init();
 
 });
