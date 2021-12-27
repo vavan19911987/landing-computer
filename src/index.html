@@ -117,10 +117,9 @@
 					Регистрация
 				</h2>
 			</a>
-			<form class="modalKab__form" action="#">
-				<input class="modalKab__input" type="text" name="text" id="text" placeholder="UserName">
-				<input class="modalKab__input" type="password" name="password" id="password" placeholder="password">
-				<!-- <input class="modalKab__input" type="email" name="email" id="email" placeholder="E-mail"> -->
+			<form class="modalKab__form form" action="#">
+				<input title="Введите имя данное при регистрации" class="modalKab__input" type="name" name="name" id="name" placeholder="UserName" data-validate-field="name">
+				<input title="Введите пароль полученный при регистрации" class="modalKab__input" type="password" name="password" id="password" placeholder="password" data-validate-field='password'>
 
 				<button type="submit" class="modalKab__btn btn">Войти</button>
 
@@ -156,10 +155,17 @@
 			<h2 class="modalKab__title title">
 			Заказать курc
 			</h2>
-			<form class="modalKab__form" action="#">
-				<input class="modalKab__input" type="email" name="email" id="emailCurse" placeholder="E-mail">
+			<form class="modalKab__form form2" action="#">
+
+
+
+				<input class="modalKab__input" type="email" name="email" id="emailCurse" placeholder="E-mail"
+				data-validate-field="email">
+
 				<button type="submit" class="modalKab__btn btn">Заказать</button>
+
 				<div class="modalKab__checkbox checkbox">
+
 					<div class="modalKab__span">Я согласен(а) с <a href="/policy.html" target="_blank">политикой
 							конфиденциальности</a>
 					</div>
@@ -630,16 +636,28 @@
 					<div class="footer__subtitle subtitle">
 						Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
 					</div>
-					<form action="#" class="footer__form">
-						<input class="footer__input" type="email" name="email" id="email" placeholder="E-mail">
+
+
+					<form action="#" class="footer__form form3">
+
+
+					<div class="footer__block">
+						<input class="footer__input" type="email" name="email2" id="email" placeholder="E-mail"data-validate-field="email" >
+
 						<button type="submit" class="footer__btn btn">Подписаться</button>
-					</form>
+					</div>
+
+
 					<div class="footer__checkbox checkbox">
 						<div class="footer__span">Я согласен(а) с <a href="/policy.html" target="_blank">политикой
 								конфиденциальности</a>
 						</div>
-						<input checked type="checkbox" class="checkbox__input _req" data-validate-field="checkbox">
+						<input checked type="checkbox" class="footer__inputCheck" data-validate-field="checkbox">
 					</div>
+
+					</form>
+
+
 					<div class="footer__social">
 						<a href="#"><img src="icons/vk.png" alt="social"></a>
 						<a href="#"><img src="icons/youtube.png" alt="social"></a>
@@ -657,7 +675,6 @@
 
 
 	</main>
-
 
 
 

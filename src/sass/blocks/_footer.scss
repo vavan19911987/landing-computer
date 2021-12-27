@@ -15,18 +15,27 @@
         text-align: center;
         padding-bottom: 60px;
     }
-    &__form {
-        display: flex; 
+    &__block {
+        display: flex;
         align-items: center;
         padding-bottom: 40px;
         justify-content: center;
+        .js-validate-error-label {
+            order: 2;
+        }
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        padding-bottom: 40px;
+        justify-content: center;
+        flex-direction: column;
     }
     &__input {
         cursor: pointer;
         height: 44px;
         width: 400px;
         padding-left: 39px;
-        // background: #ffffff;
         opacity: 0.25;
         border-radius: 50px 0px 0px 50px;
         font-size: 17px;
@@ -65,8 +74,12 @@
     &__checkbox {
         display: flex;
         align-items: center;
+        flex-direction: column;
         font-size: 18px;
         margin-bottom: 20px;
+    }
+    &__inputCheck {
+        margin: 20px;
     }
     &__span {
         margin-right: 20px;
@@ -94,7 +107,6 @@
         font-size: 16px;
         @include med;
         line-height: 25px;
-
     }
     a {
         color: red;

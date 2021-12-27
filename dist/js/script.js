@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', function () {
     "user strict";
 
 
-
+    // ! Timer
     const newYear = new Date('jan 20 2022 00:00:00');
 
     const daysVal = document.querySelector('.days .header__namber_val');
@@ -41,6 +41,7 @@ window.addEventListener('DOMContentLoaded', function () {
         minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
         secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
     };
+
     timeCount();
     setInterval(timeCount, 1000);
 
@@ -96,12 +97,92 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
 
+    // ! validation
 
 
+    let validateForms = function (selector, rules, successModal, yaGoal) {
+        new window.JustValidate(selector, {
+            rules: rules,
+
+            messages: {
+                name: {
+                    required: 'Введите имя пользователя',
+                    minLength: 'Слишком короткое Имя',
+
+                },
+                email2: {
+                    email: 'Введенные данные не верны!',
+                    required: 'Введите Вашу почту',
+                },
+                email: {
+                    email: 'Введенные данные не верны!',
+                    required: 'Введите Вашу почту',
+                },
+                password: {
+                    required: 'Введите пароль',
+                    minLength: 'Немение 8-ми символов',
+                },
+                checkbox: {
+                    required: 'Пожалуйста, подтвердите согласие',
+                }
+            },
 
 
+            // submitHandler: function (form) {
+            //     let formData = new FormData(form);
+            //     let xhr = new XMLHttpRequest();
 
+                // xhr.onreadystatechange = function () {
+                //     if (xhr.readyState === 4) {
 
+                //         if (xhr.status === 200) {
+                //             let modal = document.querySelector('.overlay');
+                //             modal.classList.add('thanks');
+                //             let closes = document.querySelector('.modal__close');
+                //             closes.addEventListener('click', function () {
+                //                 modal.classList.remove('thanks');
+                //             });
+                //         }
+                //     }
+                // };
+                // xhr.open('POST', 'mailer/smart.php', true);
+                // xhr.send(formData);
+
+                // form.reset();
+            // },
+
+        });
+
+    };
+
+    validateForms('.form', {
+        checkbox: {
+            required: true,
+        },
+        name: {
+            required: true,
+            minLength: 2,
+        },
+        password: {
+            required: true,
+            minLength: 8,
+
+        },
+    }, 'thanks-popup', 'send goal');
+
+    validateForms('.form2', {
+        checkbox: {
+            required: true,
+        },
+
+    }, 'thanks-popup', 'send goal');
+
+    validateForms('.form3', {
+        checkbox: {
+            required: true,
+        },
+
+    }, 'thanks-popup', 'send goal');
 
 
 
