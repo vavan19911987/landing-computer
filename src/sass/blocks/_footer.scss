@@ -17,11 +17,12 @@
     }
     &__block {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         padding-bottom: 40px;
         justify-content: center;
         .js-validate-error-label {
-            // order: 2;
+            // order: -1;
             position: absolute;
             margin: 20px 0px 20px 0px;
             right: 45%;
@@ -81,6 +82,7 @@
         font-size: 18px;
         // margin-bottom: 20px;
         margin-top: 15px;
+        text-align: center;
     }
     &__inputCheck {
         margin: 20px;

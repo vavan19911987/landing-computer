@@ -156,7 +156,6 @@ window.addEventListener('DOMContentLoaded', function () {
     };
 
     validateForms('.form', {
-        
         checkbox: {
             required: true,
         },

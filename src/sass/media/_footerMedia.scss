@@ -1,23 +1,9 @@
-@media (max-width: 658px) {
-    .footer {
-        &__title {
-            font-size: 30px;
-        }
-        &__subtitle {
-            font-size: 12px; 
-        }
-    }
-
-}
-@media (max-width: 588px) {
+@media (max-width: 658px) { 
     .footer {
         &__input {
-            width: 100%;
+            // width: 100%;
             border-radius: 50px 50px 50px 50px;
-            margin-bottom: 50px;
-        }
-        &__form {
-            flex-direction: column;
+            margin-bottom: 20px;
         }
         &__title {
             font-size: 25px;
@@ -33,13 +19,24 @@
             font-size: 16px;
 
         }
+        &__block {
+            .js-validate-error-label {
+                position: static;
+            }
+        }
        
     }
     
 }
-// @media (max-width: 1200px) {
-    
-// }
+@media (max-width: 450px) {
+    .footer {
+        &__input {
+            width: 100%;
+        }
+       
+       
+    }
+}
 // @media (max-width: 1200px) {
     
 // }
