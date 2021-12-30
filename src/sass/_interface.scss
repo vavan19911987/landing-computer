@@ -3,6 +3,7 @@
     margin: 0 auto;
     // overflow: hidden;
     position: relative;
+    // transition: 2s all;
 }
 
 .link {
@@ -27,12 +28,14 @@ body {
     color: $color-text;
     position: relative;
 }
+html {
+    scroll-behavior: smooth;
+}
 .text {
     font-size: 24px;
     line-height: 140%;
     text-align: center;
     @include reg;
-
 }
 
 .title {
@@ -60,5 +63,17 @@ body {
 }
 .js-validate-error-label {
     text-align: center;
+}
 
+
+.up {
+    // display: block;
+    opacity: 0;
+    width: 50px;
+    position: fixed;
+    cursor: pointer;
+    top: 85%;
+    right: 50px;
+    z-index: 999;
+    transition: 2s all;
 }

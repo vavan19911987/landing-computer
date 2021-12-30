@@ -132,23 +132,23 @@ window.addEventListener('DOMContentLoaded', function () {
             //     let formData = new FormData(form);
             //     let xhr = new XMLHttpRequest();
 
-                // xhr.onreadystatechange = function () {
-                //     if (xhr.readyState === 4) {
+            // xhr.onreadystatechange = function () {
+            //     if (xhr.readyState === 4) {
 
-                //         if (xhr.status === 200) {
-                //             let modal = document.querySelector('.overlay');
-                //             modal.classList.add('thanks');
-                //             let closes = document.querySelector('.modal__close');
-                //             closes.addEventListener('click', function () {
-                //                 modal.classList.remove('thanks');
-                //             });
-                //         }
-                //     }
-                // };
-                // xhr.open('POST', 'mailer/smart.php', true);
-                // xhr.send(formData);
+            //         if (xhr.status === 200) {
+            //             let modal = document.querySelector('.overlay');
+            //             modal.classList.add('thanks');
+            //             let closes = document.querySelector('.modal__close');
+            //             closes.addEventListener('click', function () {
+            //                 modal.classList.remove('thanks');
+            //             });
+            //         }
+            //     }
+            // };
+            // xhr.open('POST', 'mailer/smart.php', true);
+            // xhr.send(formData);
 
-                // form.reset();
+            // form.reset();
             // },
 
         });
@@ -203,6 +203,23 @@ window.addEventListener('DOMContentLoaded', function () {
         bodys.setAttribute("style", "overflow:none;");
         menu.classList.remove('active');
     });
+
+
+    // ! Кнопка вверх
+
+    function trackScroll() {
+        let scrolled = window.pageYOffset;
+        const up = document.querySelector(".up");
+
+        if (scrolled > 550) {
+            up.setAttribute("style", "opacity: 1");
+        }
+        if (scrolled < 550) {
+            up.setAttribute("style", "opacity: 0");
+        }
+
+    }
+    window.addEventListener('scroll', trackScroll);
 
 
 

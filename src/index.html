@@ -46,7 +46,7 @@
 
 </head>
 
-<body>
+<body id="up">
 	<!-- ! Отображаемое тело страницы -->
 	<!-- ? MENU -->
 	<div class="menu">
@@ -118,8 +118,10 @@
 				</h2>
 			</a>
 			<form class="modalKab__form form" action="#">
-				<input title="Введите имя данное при регистрации" class="modalKab__input" type="name" name="name" id="name" placeholder="UserName" data-validate-field="name">
-				<input title="Введите пароль полученный при регистрации" class="modalKab__input" type="password" name="password" id="password" placeholder="password" data-validate-field='password'>
+				<input title="Введите имя данное при регистрации" class="modalKab__input" type="name" name="name"
+					id="name" placeholder="UserName" data-validate-field="name">
+				<input title="Введите пароль полученный при регистрации" class="modalKab__input" type="password"
+					name="password" id="password" placeholder="password" data-validate-field='password'>
 
 				<button type="submit" class="modalKab__btn btn">Войти</button>
 
@@ -153,14 +155,14 @@
 		</div>
 		<div class="modalKab__wrapper">
 			<h2 class="modalKab__title title">
-			Заказать курc
+				Заказать курc
 			</h2>
 			<form class="modalKab__form form2" action="#">
 
 
 
 				<input class="modalKab__input" type="email" name="email" id="emailCurse" placeholder="E-mail"
-				data-validate-field="email">
+					data-validate-field="email">
 
 				<button type="submit" class="modalKab__btn btn">Заказать</button>
 
@@ -174,6 +176,26 @@
 			</form>
 		</div>
 	</div>
+
+	<a href="#up" class="up">
+		<!-- <img src="img/uparrow.svg" alt=""> -->
+		<?xml version="1.0" encoding="iso-8859-1"?>
+		<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+			x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+			<g>
+				<path style="fill:rgb(236, 22, 240);" d="M256.001,512c-32.627,0-59.08-26.453-59.08-59.08V59.077C196.921,26.45,223.374,0,256.001,0
+		s59.077,26.45,59.077,59.077V452.92C315.078,485.548,288.628,512,256.001,512z" />
+				<path style="fill:#e928ec;" d="M452.924,315.075c-15.119,0-30.241-5.765-41.769-17.301L256.004,142.628L100.852,297.774
+		c-23.068,23.073-60.477,23.073-83.546,0c-23.073-23.073-23.073-60.477,0-83.551l196.92-196.918
+		c23.068-23.073,60.477-23.073,83.543,0l196.925,196.92c23.071,23.073,23.071,60.477,0,83.551
+		C483.157,309.309,468.038,315.075,452.924,315.075z" />
+			</g>
+		</svg>
+
+	</a>
+
+
 
 
 
@@ -641,21 +663,22 @@
 					<form action="#" class="footer__form form3">
 
 
-					<div class="footer__block">
-						<div>
-							<input class="footer__input" type="email" name="email2" id="email" placeholder="E-mail"data-validate-field="email" >
+						<div class="footer__block">
+							<div>
+								<input class="footer__input" type="email" name="email2" id="email" placeholder="E-mail"
+									data-validate-field="email">
+							</div>
+							<button type="submit" class="footer__btn btn">Подписаться</button>
 						</div>
-						<button type="submit" class="footer__btn btn">Подписаться</button>
-					</div>
 
 
 
-					<div class="footer__checkbox checkbox">
-						<div class="footer__span">Я согласен(а) с <a href="/policy.html" target="_blank">политикой
-								конфиденциальности</a>
+						<div class="footer__checkbox checkbox">
+							<div class="footer__span">Я согласен(а) с <a href="/policy.html" target="_blank">политикой
+									конфиденциальности</a>
+							</div>
+							<input checked type="checkbox" class="footer__inputCheck" data-validate-field="checkbox">
 						</div>
-						<input checked type="checkbox" class="footer__inputCheck" data-validate-field="checkbox">
-					</div>
 
 					</form>
 
