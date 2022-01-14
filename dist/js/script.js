@@ -128,28 +128,29 @@ window.addEventListener('DOMContentLoaded', function () {
             },
 
 
-            // submitHandler: function (form) {
-            //     let formData = new FormData(form);
-            //     let xhr = new XMLHttpRequest();
+            submitHandler: function (form) {
+                let formData = new FormData(form);
+                let xhr = new XMLHttpRequest();
 
-            // xhr.onreadystatechange = function () {
-            //     if (xhr.readyState === 4) {
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4) {
 
-            //         if (xhr.status === 200) {
-            //             let modal = document.querySelector('.overlay');
-            //             modal.classList.add('thanks');
-            //             let closes = document.querySelector('.modal__close');
-            //             closes.addEventListener('click', function () {
-            //                 modal.classList.remove('thanks');
-            //             });
-            //         }
-            //     }
-            // };
-            // xhr.open('POST', 'mailer/smart.php', true);
-            // xhr.send(formData);
+                        if (xhr.status === 200) {
+                            console.log("Отправлено");
+                            // let modal = document.querySelector('.overlay');
+                            // modal.classList.add('thanks');
+                            // let closes = document.querySelector('.modal__close');
+                            // closes.addEventListener('click', function () {
+                            //     modal.classList.remove('thanks');
+                            // });
+                        }
+                    }
+                };
+                xhr.open('POST', 'mailer/smart.php', true);
+                xhr.send(formData);
 
-            // form.reset();
-            // },
+                form.reset();
+            },
 
         });
 
